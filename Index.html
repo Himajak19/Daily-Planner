@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="planner">
+    <div class="planner-header">
+      <h1>Daily Planner</h1>
+      <div class="planner-date-time">
+        <label>Date: <input type="date" id="date" /></label>
+        <label>Time: <input type="time" id="time" /></label>
+      </div>
+    </div>
+
+    <div class="planner-body">
+      <div class="todo-list">
+        <h2>To Do List:</h2>
+        <ul id="taskList">
+          <!-- JS will generate 13 rows -->
+        </ul>
+      </div>
+
+      <div class="planner-sidebar">
+        <div class="priority-box">
+          <h3>Priority</h3>
+          <textarea id="priorityText" placeholder="High priority tasks..."></textarea>
+        </div>
+        <div class="notes-box">
+          <h3>Note:</h3>
+          <textarea id="notesText" placeholder="Write your notes here..."></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
